@@ -1,0 +1,4 @@
+__pycache__
+rasa/.rasa
+travel_assistant/chatbot/__pycache__
+travel_assistant/chatbot/migrations

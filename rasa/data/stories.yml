@@ -1,0 +1,236 @@
+
+version: "2.0"
+stories:
+- story: interactive_story_1
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: inform_best_hotels
+    entities:
+    - city: gilgit
+  - slot_was_set:
+    - city: gilgit
+  - action: action_best_hotels
+  - intent: inform_price
+    entities:
+    - position: second
+  - slot_was_set:
+    - position: second
+  - action: action_hotels_price
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: interactive_story_1
+  steps:
+  - intent: inform_best_hotels
+    entities:
+    - city: skardu
+  - slot_was_set:
+    - city: skardu
+  - action: action_best_hotels
+  - intent: inform_price
+    entities:
+    - position: first
+  - slot_was_set:
+    - position: first
+  - action: action_price
+
+- story: interactive_story_1
+  steps:
+  - intent: inform_best_hotels
+    entities:
+    - city: skardu
+  - slot_was_set:
+    - city: skardu
+  - action: action_best_hotels
+  - intent: inform_price
+    entities:
+    - position: first
+  - slot_was_set:
+    - position: first
+  - action: action_price
+
+
+- story: interactive_story_2
+  steps:
+  - intent: inform_weather
+    entities:
+    - city: gilgit
+  - slot_was_set:
+    - city: gilgit
+  - action: action_weather
+  - intent: inform_weather
+    entities:
+    - city: swat
+  - slot_was_set:
+    - city: swat
+  - action: action_weather
+
+- story: interactive_story_3
+  steps:
+  - intent: inform_cheap_hotels
+    entities:
+    - city: skardu
+  - slot_was_set:
+    - city: skardu
+  - action: action_cheap_hotels
+  - intent: inform_cheap_hotels
+    entities:
+    - city: swat
+  - slot_was_set:
+    - city: swat
+  - action: action_cheap_hotels
+
+- story: interactive_story_4
+  steps:
+  - intent: inform_price
+    entities:
+    - position: second
+  - slot_was_set:
+    - position: second
+  - action: action_price
+  - intent: inform_price
+    entities:
+    - position: third
+  - slot_was_set:
+    - position: third
+  - action: action_price
+
+- story: interactive_story_5
+  steps:
+  - intent: inform_price
+    entities:
+    - position: first
+  - slot_was_set:
+    - position: first
+  - action: action_price
+  - intent: inform_price
+    entities:
+    - position: third
+  - slot_was_set:
+    - position: third
+  - action: action_price
+
+- story: interactive_story_1
+  steps:
+  - intent: inform_weather
+    entities:
+    - city: gilgit
+  - slot_was_set:
+    - city: gilgit
+  - action: action_weather
+  - intent: inform_weather
+    entities:
+    - city: swat
+  - slot_was_set:
+    - city: swat
+  - action: action_weather
+  - intent: inform_weather
+    entities:
+    - city: skardu
+  - slot_was_set:
+    - city: skardu
+  - action: action_weather
+
+- story: interactive_story_6
+  steps:
+  - intent: inform_cheap_hotels
+    entities:
+    - city: swat
+  - slot_was_set:
+    - city: swat
+  - action: action_cheap_hotels
+  - intent: inform_cheap_hotels
+    entities:
+    - city: chitral
+  - slot_was_set:
+    - city: chitral
+  - action: action_cheap_hotels
+
+- story: interactive_story_7
+  steps:
+  - intent: inform_best_hotels
+    entities:
+    - city: swat
+  - slot_was_set:
+    - city: swat
+  - action: action_best_hotels
+  - intent: inform_best_hotels
+    entities:
+    - city: chitral
+  - slot_was_set:
+    - city: chitral
+  - action: action_best_hotels
+
+- story: interactive_story_8
+  steps:
+  - intent: inform_address
+    entities:
+    - position: first
+  - slot_was_set:
+    - position: first
+  - action: action_address
+  - intent: inform_address
+    entities:
+    - position: second
+  - slot_was_set:
+    - position: second
+  - action: action_address
+
+- story: interactive_story_1
+  steps:
+  - intent: inform_weather
+    entities:
+    - city: naran
+  - slot_was_set:
+    - city: naran
+  - action: action_weather
+  - slot_was_set:
+    - city: naran
+  - intent: inform_weather
+    entities:
+    - city: gilgit
+  - slot_was_set:
+    - city: gilgit
+  - action: action_weather
+  - slot_was_set:
+    - city: gilgit
+  - intent: inform_cheap_hotels
+    entities:
+    - city: naran
+  - slot_was_set:
+    - city: naran
+  - action: action_cheap_hotels
+
+- story: interactive_story_1
+  steps:
+  - intent: inform_cheap_hotels
+    entities:
+    - city: naran
+  - slot_was_set:
+    - city: naran
+  - action: action_cheap_hotels
+  - intent: inform_price
+    entities:
+    - position: first
+  - slot_was_set:
+    - position: first
+  - action: action_price
+  - intent: inform_cheap_hotels
+    entities:
+    - city: skardu
+  - slot_was_set:
+    - city: skardu
+  - action: action_cheap_hotels
+  - intent: inform_price
+    entities:
+    - position: third
+  - slot_was_set:
+    - position: third
+  - action: action_price
