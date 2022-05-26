@@ -25,15 +25,22 @@ The chat-bot can answer a wide range of questions. Some of them are given below.
 ## Prerequisites
 
 You will need to install RASA and Django using pip. The commands to install them are given below.
-`pip install rasa` 
+
+`pip install rasa`
+
 `pip install django`
 
 ## How To Run
 
 First, we will need to run the our actions script.
+
 `rasa run actions`
-After that we need to load our model. 
+
+After that we need to load our model.
+
 `rasa run -m models --enable-api --cors "*"`
+
 Lastly, we need to run our Django application.
+
 `python manage.py runserver`
 
